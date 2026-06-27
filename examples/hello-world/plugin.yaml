@@ -1,0 +1,10 @@
+name: hello-world
+version: 0.1.0
+description: PPanel example plugin with async handler
+author: PPanel
+main: plugin.wasm
+permissions:
+  - http_routes
+  - logging
+  - redis
+  - http_client

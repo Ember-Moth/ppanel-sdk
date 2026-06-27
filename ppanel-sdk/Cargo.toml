@@ -1,0 +1,17 @@
+[package]
+name = "ppanel-sdk"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "PPanel plugin development SDK for Rust"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+ppanel-sdk-macros = { path = "../ppanel-sdk-macros" }
+prost = "0.13"
+prost-types = "0.13"
+
+[build-dependencies]
+prost-build = "0.13"
