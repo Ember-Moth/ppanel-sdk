@@ -1,0 +1,15 @@
+name: demo-plugin
+version: 0.1.0
+description: PPanel SDK 教学插件，演示路由、中间件、Redis、DB、事件、配置读取和异步 host 调用
+author: PPanel
+main: plugin.wasm
+permissions:
+  - http_routes
+  - middleware
+  - redis
+  - database_read
+  - logging
+  - config_read
+  - events
+config:
+  greeting: 你好

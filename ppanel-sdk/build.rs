@@ -5,6 +5,7 @@ fn main() {
     let google_include = std::path::PathBuf::from("/usr/include");
     println!("cargo:rerun-if-changed={}", proto_file.display());
     prost_build::Config::new()
+        .btree_map(&["."])
         .compile_protos(&[proto_file], &[proto_dir, google_include])
         .expect("failed to compile proto files");
 }

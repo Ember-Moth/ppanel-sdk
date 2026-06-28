@@ -3,5 +3,5 @@ resolver = "2"
 members = [
     "ppanel-sdk-macros",
     "ppanel-sdk",
-    "examples/hello-world",
+    "examples/demo-plugin",
 ]
